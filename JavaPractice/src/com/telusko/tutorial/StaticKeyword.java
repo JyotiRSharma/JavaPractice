@@ -3,7 +3,7 @@ package com.telusko.tutorial;
 class Emp {
 	int eid;
 	int salary;
-	String ceo;
+	static String ceo;
 	
 	public void display() {
 		System.out.println("eid :" + eid + "salary: " + salary + "ceo: " + ceo);
@@ -22,9 +22,10 @@ public class StaticKeyword {
 		Emp ranjan = new Emp();
 		ranjan.eid = 67891;
 		ranjan.salary = 13_000;
-		ranjan.ceo = "Shyam"; //If CEO is changed to Shyam, 
-							  //the change is affected from ranjan only
-		
+		ranjan.ceo = "Shyam"; //If the static ceo is changed to Shyam, 
+							  //the change is affected all over
+							  //Because now the ceo data is store in the Class Loader Memory
+							 //Earlier it was stored in heap memory.
 		System.out.println("Jyoti: ");
 		jyoti.display();
 		
