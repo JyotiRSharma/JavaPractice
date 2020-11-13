@@ -22,7 +22,8 @@ public class StaticKeyword {
 		Emp ranjan = new Emp();
 		ranjan.eid = 67891;
 		ranjan.salary = 13_000;
-		ranjan.ceo = "Ram";
+		ranjan.ceo = "Shyam"; //If CEO is changed to Shyam, 
+							  //the change is affected from ranjan only
 		
 		System.out.println("Jyoti: ");
 		jyoti.display();
